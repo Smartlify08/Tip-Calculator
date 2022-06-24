@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="bg-secondary d-flex">
+  <header class="app-header">
+    <h1 class="text-dark">SPLITTER</h1>
+  </header>
+  <main>
+    <div class="card bg-lighter" id="calculator">
+
+      <div class="container d-flex">
+        <div class="calc-section">
+          <section class="bill-section d-flex">
+            <label for="Bill" class="text-dark">Bill</label>
+            <input type="text" placeholder="0.00" class="bg-light" id="bill-input">
+          </section>
+    
+          <section class="tip-select d-grid">
+    
+              <div class="select-box bg-dark">
+                <h1 class="text-light">5%</h1>
+              </div>
+    
+              <div class="select-box bg-dark">
+                <h1 class="text-light">10%</h1>
+              </div>
+    
+              <div class="select-box bg-dark">
+                <h1 class="text-light">15%</h1>
+              </div>
+    
+    
+              <div class="select-box bg-dark">
+                <h1 class="text-light">25%</h1>
+              </div>
+    
+              <div class="select-box bg-dark">
+                <h1 class="text-light">50%</h1>
+              </div>
+    
+              <div class="select-box bg-light">
+                <h1 class="text-dark">Custom</h1>
+              </div>
+          </section>
+  
+          <section class="people-section d-flex">
+            <label for="Bill" class="text-dark">number of people</label>
+            <input type="text" placeholder="0" class="bg-light" id="people-amount">
+          </section>
+        </div>
+        
+
+        <section class="tip-display">
+
+          <div class="card bg-dark d-flex">
+
+            <div class="tip-amount-box d-flex">
+              <div class="d-flex">
+                <h3 class="text-light">Tip Amount </h3> 
+                <h6 class='text-secondary'> /person</h6>
+              </div>
+
+              <h1 class="text-primary" id="tip-amount">$0.00</h1>
+            </div>
+
+            <div class="total-amount-box d-flex">
+              <div class="d-flex">
+                <h3 class="text-light">Total</h3>
+                <h6 class="text-secondary">/person</h6>
+              </div>
+
+              <h1 class="text-primary" id="total-amount-person">$0.00</h1>
+            </div>
+
+            <div class="btn-container">
+              <input type="button" value="Reset" class="btn-primary text-dark" id="btn-reset">
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+  
+    </div>
+  </main>
+
+
+  <script src="js/app.js"></script>
+</body>
+
+
+</html>
