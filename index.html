@@ -47,9 +47,9 @@
                 <h1 class="text-light">50%</h1>
               </div>
     
-              <div class="select-box bg-light">
-                <h1 class="text-dark">Custom</h1>
-              </div>
+              
+                <input type="text" name="text" id="custom-tip" placeholder="Custom" class="select-box bg-light">
+             
           </section>
   
           <section class="people-section d-flex">
@@ -68,8 +68,15 @@
                 <h3 class="text-light">Tip Amount </h3> 
                 <h6 class='text-secondary'> /person</h6>
               </div>
-
-              <h1 class="text-primary" id="tip-amount">$0.00</h1>
+              
+              <div class="d-flex right-side">
+                <div class="img-box">
+                  <img src="images/icon-dollar.svg" alt="" class="dollar-img">
+                </div>
+                
+                <h1 class="text-primary" id="tip-amount">0.00</h1>
+              </div>
+              
             </div>
 
             <div class="total-amount-box d-flex">
@@ -78,8 +85,16 @@
                 <h6 class="text-secondary">/person</h6>
               </div>
 
-              <h1 class="text-primary" id="total-amount-person">$0.00</h1>
+              <div class="d-flex right-side">
+                <div class="img-box">
+                  <img src="images/icon-dollar.svg" alt="" class="dollar-img">
+                </div>
+                
+                <h1 class="text-primary" id="total-amount-person">0.00</h1>
             </div>
+              </div>
+
+              
 
             <div class="btn-container">
               <input type="button" value="Reset" class="btn-primary text-dark" id="btn-reset">
