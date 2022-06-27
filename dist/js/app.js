@@ -485,7 +485,10 @@ const reset = () => {
      people_input.value = '';
 
      tipAmount.innerText = '0.00';
-     totalAmountPerson.innerText = '0.00';
+     totalAmountPerson.innerText = '0.00'
+
+     borderNone();
+     removeTextContent()
 }
 
 btn.addEventListener('click', reset)
